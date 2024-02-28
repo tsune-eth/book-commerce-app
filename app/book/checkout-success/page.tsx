@@ -14,7 +14,6 @@ const PurchaseSuccess = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (sessionId) {
-        console.log(sessionId);
         try {
           const response = await fetch(
             `${process.env.NEXT_PUBLIC_API_URL}/checkout/success`,
